@@ -7,9 +7,23 @@
 //
 
 #include <iostream>
+#include <string>
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    string myString = "";
+    cout << "Enter your sentence: " << endl;
+    getline(cin,myString);
+    for(int i = myString.length(); i >= 0; i--)
+    {
+        cout << myString[i];
+    }
+    cout << endl;
+    
+    
+    
+    
+    
     return 0;
 }
